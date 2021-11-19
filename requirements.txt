@@ -3,7 +3,6 @@ numpy
 datetime
 plotly
 streamlit
-streamlit.components.v1
 base64
 plotly.express
 google.protobuf.symbol_database

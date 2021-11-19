@@ -1,2 +1,0 @@
-# WP-QRY
-Ordenes antiguas

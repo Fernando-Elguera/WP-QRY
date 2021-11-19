@@ -35,7 +35,7 @@ st.header('WIP & QRY + Ordenes Antiguas')
 ### --- LOAD DATAFRAME
 today = datetime.date.today()
 date = st.sidebar.date_input('Fecha a buscar', today)
-excel_file = 'https://raw.githubusercontent.com/Fernando-Elguera/WP-QRY/blob/main/WIP_QRY.xlsx'
+excel_file = 'https://github.com/Fernando-Elguera/WP-QRY/raw/main/WIP_QRY.xlsx'
 
 # Para bajar el archivo de excel
 def get_binary_file_downloader_html(bin_file, file_label='File'):

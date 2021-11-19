@@ -1,5 +1,5 @@
 pandas
-os
+numpy
 datetime
 plotly
 streamlit

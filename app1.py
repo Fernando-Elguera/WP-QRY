@@ -7,7 +7,6 @@ import datetime
 import base64
 import numpy as np
 import os
-from pyxlsb import open_workbook as open_xlsb
 import streamlit.components.v1 as components
 
 #import gspread

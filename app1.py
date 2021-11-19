@@ -46,12 +46,12 @@ def get_binary_file_downloader_html(bin_file, file_label='File'):
      return href
 
 
-# sheet_name = date
-# sheet_name = sheet_name.strftime("%Y-%m-%d")
-# df = pd.read_excel(excel_file,
-#                    sheet_name=sheet_name,
-#                    usecols='B:V',
-#                    header=3)
+sheet_name = date
+sheet_name = sheet_name.strftime("%Y-%m-%d")
+df = pd.read_excel(excel_file,
+                   sheet_name=sheet_name,
+                   usecols='B:V',
+                   header=3)
 
 
 # df_general = pd.read_excel(excel_file,

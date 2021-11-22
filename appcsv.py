@@ -80,7 +80,7 @@ mask = (filtered_df1['Work_Order'].between(*work_order_selection)) & (filtered_d
 mask_general = (df_general['Work_Order'].between(*work_order_selection)) & (df_general['Planta'].isin(planta_selection))
 # number_of_result = df[mask].shape[0]
 number_of_result = filtered_df1[mask].shape[0]
-st.markdown(f'*Ordenes disponibles: {number_of_result}*')
+st.sidebar.markdown(f'*Ordenes disponibles: {number_of_result}*')
 
 
 

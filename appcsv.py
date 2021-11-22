@@ -131,6 +131,22 @@ st.markdown("""---""")
 
 filtered_df1[mask]
 
+
+
+@st.cache
+def convert_df(filtered_df1):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return filtered_df1.to_csv().encode('utf-8')
+
+csv = convert_df(filtered_df1)
+
+st.sidebar.download_button(
+     label="Descargar Archivo Excel ",
+     data=csv,
+     file_name='WIP-QRY.csv',
+     mime='text/csv',
+ )
+
 # Fecha_buscada
 # filtered_df
 

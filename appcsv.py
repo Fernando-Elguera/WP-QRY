@@ -113,7 +113,7 @@ total_sales = int(filtered_df1[mask]["W/O WIP Amount"].sum())
 
 # left_column, middle_column, right_column = st.columns(3)
 # with left_column:
-st.subheader("Total W/O WIP Amount:"   f"MX $ {total_sales:,}")
+st.subheader("Total W/O WIP Amount:"f  "MX $ {total_sales:,}")
 # st.subheader(f"MX $ {total_sales:,}")
 # with middle_column:
 #     st.subheader("Average Rating:")

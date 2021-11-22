@@ -70,7 +70,7 @@ work_order_selection = st.slider('Work_Order:',
 
 
 
-planta_selection = st.multiselect('Planta:',
+planta_selection = st.sidebar.multiselect('Planta:',
                                     planta,
                                     default=planta)# Cual Planta Inicia, para aparecer todas porner planta
 

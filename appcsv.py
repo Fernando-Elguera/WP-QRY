@@ -80,7 +80,7 @@ mask = (filtered_df1['Work_Order'].between(*work_order_selection)) & (filtered_d
 mask_general = (df_general['Work_Order'].between(*work_order_selection)) & (df_general['Planta'].isin(planta_selection))
 # number_of_result = df[mask].shape[0]
 number_of_result = filtered_df1[mask].shape[0]
-st.sidebar.markdown(f'*Ordenes disponibles: {number_of_result}*')
+
 
 
 
@@ -113,6 +113,7 @@ total_sales = int(filtered_df1[mask]["W/O WIP Amount"].sum())
 
 # left_column, middle_column, right_column = st.columns(3)
 # with left_column:
+st.sidebar.markdown(f'*Ordenes disponibles: {number_of_result}*')
 st.sidebar.subheader("Total W/O WIP Amount:  "f"MX $ {total_sales:,}")
 # st.subheader(f"MX $ {total_sales:,}")
 # with middle_column:

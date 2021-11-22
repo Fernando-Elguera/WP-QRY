@@ -178,7 +178,7 @@ bar_chart = px.bar(df_grouped,
                    template= 'plotly_white')
 
 
-bar_chart1 = px.bar(df_grouped1,                    
+bar_chart1 = px.line(df_grouped1,                    
                     x= 'Fecha',
                     y='Cantidad',
                     text='Cantidad',
@@ -190,7 +190,7 @@ bar_chart1 = px.bar(df_grouped1,
 
 
 
-bar_chart2 = px.bar(df_grouped2,                    
+bar_chart2 = px.line(df_grouped2,                    
                     x= 'Fecha',
                     y='Cantidad',
                     text='Cantidad',

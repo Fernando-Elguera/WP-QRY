@@ -21,12 +21,12 @@ date = st.sidebar.date_input('Fecha a buscar', today)
 excel_file = 'Wip_QRY.csv'
 
 # Para bajar el archivo de excel
-def get_binary_file_downloader_html(bin_file, file_label='File'):
-     with open(bin_file, 'rb') as f:
-        data = f.read()
-     bin_str = base64.b64encode(data).decode()
-     href = f'<a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(bin_file)}">Descargar {file_label}</a>'
-     return href
+# def get_binary_file_downloader_html(bin_file, file_label='File'):
+#      with open(bin_file, 'rb') as f:
+#         data = f.read()
+#      bin_str = base64.b64encode(data).decode()
+#      href = f'<a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(bin_file)}">Descargar {file_label}</a>'
+#      return href
 
 # Para cambiar cadena de fecha
 Fecha_buscada= date
@@ -124,7 +124,7 @@ filtered_df1[mask]
 # filtered_df = df[df_2310]
 # filtered_df
 
-st.markdown(get_binary_file_downloader_html('Wip_QRY.csv', 'Excel'), unsafe_allow_html=True)
+# st.markdown(get_binary_file_downloader_html('Wip_QRY.csv', 'Excel'), unsafe_allow_html=True)
 
 
 bar_chart = px.bar(df_grouped,

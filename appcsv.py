@@ -105,10 +105,10 @@ df_grouped2 = df_grouped2.reset_index()
 # filtered_df = df[df_2310]
 
 # TOP KPI's
-total_sales = int(filtered_df1["Aging"].sum())
-average_rating = round(filtered_df1["Rating"].mean(), 1)
+total_sales = int(filtered_df1[mask]["Aging"].sum())
+average_rating = round(filtered_df1[mask]["Rating"].mean(), 1)
 star_rating = ":star:" * int(round(average_rating, 0))
-average_sale_by_transaction = round(filtered_df1["Aging"].mean(), 2)
+average_sale_by_transaction = round(filtered_df1[mask]["Aging"].mean(), 2)
 
 left_column, middle_column, right_column = st.columns(3)
 with left_column:

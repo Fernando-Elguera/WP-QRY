@@ -161,9 +161,9 @@ bar_chart2 = px.bar(df_grouped2,
                     template= 'plotly_white')
 
 st.plotly_chart(bar_chart)
-left_column, right_column = st.columns(2)
-left_column.plotly_chart(bar_chart1, use_container_width=True)
-right_column.plotly_chart(bar_chart2, use_container_width=True)
+st.plotly_chart(bar_chart1)
+st.plotly_chart(bar_chart2)
+
 
 
 

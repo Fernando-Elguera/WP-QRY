@@ -111,10 +111,10 @@ total_sales = int(filtered_df1[mask]["W/O WIP Amount"].sum())
 # star_rating = ":star:" * int(round(average_rating, 0))
 # average_sale_by_transaction = round(filtered_df1["Aging"].mean(), 2)
 
-left_column, middle_column, right_column = st.columns(3)
-with left_column:
-    st.subheader("Total W/O WIP Amount:")
-    st.subheader(f"MX $ {total_sales:,}")
+# left_column, middle_column, right_column = st.columns(3)
+# with left_column:
+st.subheader("Total W/O WIP Amount:")
+st.subheader(f"MX $ {total_sales:,}")
 # with middle_column:
 #     st.subheader("Average Rating:")
 #     st.subheader(f"{average_rating} {star_rating}")

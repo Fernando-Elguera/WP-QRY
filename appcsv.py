@@ -12,7 +12,7 @@ import streamlit.components.v1 as components
 
 
 st.set_page_config(page_title='WIP & QRY + Ordenes Antiguas')
-st.header('WIP & QRY + Ordenes Antiguas')
+st.header(':bar_chart: WIP & QRY + Ordenes Antiguas')
 #st.subheader('Fecha')
 
 ### --- LOAD DATAFRAME
